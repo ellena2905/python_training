@@ -63,15 +63,19 @@ class ContactHelper:
         wd.find_element_by_name("byear").click()
         wd.find_element_by_name("byear").clear()
         wd.find_element_by_name("byear").send_keys(contact_info.year_of_birth)
-        if not wd.find_element_by_xpath("//div[@id='content']/form/select[3]//option[31]").is_selected():
-            wd.find_element_by_xpath("//div[@id='content']/form/select[3]//option[31]").click()
-        if not wd.find_element_by_xpath("//div[@id='content']/form/select[4]//option[7]").is_selected():
-            wd.find_element_by_xpath("//div[@id='content']/form/select[4]//option[7]").click()
+        if not wd.find_element_by_xpath("//div[@id='content']/form/select[3]//option[14]").is_selected():
+            wd.find_element_by_xpath("//div[@id='content']/form/select[3]//option[14]").click()
+        if not wd.find_element_by_xpath("//div[@id='content']/form/select[3]//option[14]").is_selected():
+            wd.find_element_by_xpath("//div[@id='content']/form/select[3]//option[14]").click()
+        if not wd.find_element_by_xpath("//div[@id='content']/form/select[3]//option[14]").is_selected():
+            wd.find_element_by_xpath("//div[@id='content']/form/select[3]//option[14]").click()
+        if not wd.find_element_by_xpath("//div[@id='content']/form/select[4]//option[1]").is_selected():
+            wd.find_element_by_xpath("//div[@id='content']/form/select[4]//option[1]").click()
+        if not wd.find_element_by_xpath("//div[@id='content']/form/select[4]//option[2]").is_selected():
+            wd.find_element_by_xpath("//div[@id='content']/form/select[4]//option[2]").click()
         wd.find_element_by_name("ayear").click()
         wd.find_element_by_name("ayear").clear()
-        wd.find_element_by_name("ayear").send_keys(contact_info.anniversary_year)
-        if not wd.find_element_by_xpath("//div[@id='content']/form/select[5]//option[4]").is_selected():
-            wd.find_element_by_xpath("//div[@id='content']/form/select[5]//option[4]").click()
+        wd.find_element_by_name("ayear").send_keys("2020")
         wd.find_element_by_name("address2").click()
         wd.find_element_by_name("address2").clear()
         wd.find_element_by_name("address2").send_keys(contact_info.add_address)
@@ -81,7 +85,7 @@ class ContactHelper:
         wd.find_element_by_name("notes").click()
         wd.find_element_by_name("notes").clear()
         wd.find_element_by_name("notes").send_keys(contact_info.notes)
-        wd.find_element_by_xpath("//div[@id='content']/form[1]/input[22]").click()
+        wd.find_element_by_xpath("//div[@id='content']/form/input[21]").click()
 
 
     def delete_first_contact(self):

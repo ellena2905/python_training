@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
-from model.contact_info import Contact_info
 
+from model.contact_info import Contact_info
 
 def test_add_contact(app):
     app.session.login(username="admin", password="secret")
-    app.contact.add(Contact_info(firstname="abcde", middlename="fghijk", lastname="hijklm", nickname="eclipse", title="bpc", company_name="abc", company_address="Prospect mira", company_home_num="10", company_home_phone="123456789", add_company_name="qwe", company_fax="321654", email1="abcde@abc", email2="fghijk@abc", email3="hijklm@abc", company_site="abc.ru", year_of_birth="1990", anniversary_year="2020", add_address="Dibenko", add_phone="10", notes="987654"))
+    app.contact.add(Contact_info(firstname="abcde", middlename="fghijk", lastname="hijklm", nickname="eclipse", title="bpc", company_name="abc", company_address="Prospect mira", company_home_num="10", company_home_phone="123456789", add_company_name="qwe", company_fax="321654", email1="abcde@abc", email2="fghijk@abc", email3="hijklm@abc", company_site="abc.ru", year_of_birth="1990", anniversary_year="2020", add_address="123", add_phone="10", notes="987654"))
     app.session.logout()
 
 def test_add_contact2(app):
